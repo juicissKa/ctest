@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "myfunc.h"
+#include <math.h>
 
 int myfunc(int b) {
     char *buffer = malloc(sizeof(char) * 1000);
@@ -30,6 +31,13 @@ int fibonachi(int num) {
     }
 
     return next;
+}
+
+double my_sqrt(double num) {
+    if (num < 0) {
+        return 0;
+    }
+    return sqrt(num);
 }
 
 void printStdoutMessages() {

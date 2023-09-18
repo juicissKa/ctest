@@ -9,6 +9,7 @@ pkg_check_modules(gtest gtest>=1.10)
 
 add_subdirectory(app)
 
+
 if(NOT gtest_FOUND)
     message("Google test not installed, use it's source code from external folder!!!")
     add_subdirectory(external/googletest)
