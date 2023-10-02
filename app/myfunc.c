@@ -7,7 +7,7 @@
 int myfunc(int b) {
     int *buffer = malloc(sizeof(char) * 1000);
     buffer [0] = b + 4;
-    // здесь должен ругаться sonarcloud, т.к. утечка памяти
+    // здесь должен ругаться sonarcloud, т.к. утечка памят
     return buffer[0];
 }
 
